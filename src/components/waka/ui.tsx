@@ -20,7 +20,7 @@ export function Button({
       type="button"
       className={cn(
         "press inline-flex h-12 items-center justify-center gap-2 rounded-md px-4 text-base font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel disabled:pointer-events-none disabled:opacity-40",
-        variant === "primary" && "bg-ink text-ink-fg",
+        variant === "primary" && "bg-taxi text-fg shadow-sm hover:bg-taxi-deep",
         variant === "secondary" && "border border-line bg-surface text-fg",
         variant === "ghost" && "bg-transparent text-fg",
         variant === "danger" && "border border-line bg-surface text-bad",
