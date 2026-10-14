@@ -1,22 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #f4f2ed;
-  --color-surface: #fffcf8;
-  --color-sunken: #ebe6de;
-  --color-fg: #1c1916;
-  --color-muted: #5c564e;
-  --color-faint: #7a746a;
-  --color-line: #e3dcd2;
-  --color-ink: #1c2836;
-  --color-ink-fg: #f6f3ee;
-  --color-steel: #3e5c73;
-  --color-good: #1b5c3c;
-  --color-warn: #7a4e12;
-  --color-bad: #8a3030;
+  /* NaijaMove modern Lagos taxi palette: taxi yellow, confident black, clean white. */
+  --color-bg: #f7f7f4;
+  --color-surface: #ffffff;
+  --color-sunken: #f0eee8;
+  --color-fg: #171717;
+  --color-muted: #55534e;
+  --color-faint: #77746d;
+  --color-line: #e4e1d8;
+  --color-ink: #171717;
+  --color-ink-fg: #ffffff;
+  --color-steel: #b88a00;
+  --color-good: #17633c;
+  --color-warn: #805600;
+  --color-bad: #a52b2b;
+  --color-taxi: #ffd21f;
+  --color-taxi-deep: #e6b800;
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Newsreader", Georgia, "Times New Roman", serif;
-  --radius-sm: 0.375rem;
+  --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
   --radius-xl: 1.25rem;
@@ -47,8 +50,16 @@
     cursor: pointer;
   }
   input[type="range"] {
-    accent-color: var(--color-ink);
+    accent-color: var(--color-taxi-deep);
     width: 100%;
+  }
+  :focus-visible {
+    outline: 3px solid #b88a00;
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: #ffe680;
+    color: #171717;
   }
 }
 
